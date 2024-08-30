@@ -11,7 +11,7 @@
 
 :root {
   --text-color: white;
-  --bg-url: url(./assets/bg-desktop.jpg);
+  --bg-url: url(./assets/bg-mobile.jpg);
 
   --bt-color: rgba(255, 255, 255, 0.1);
   --bt-hover: rgba(255, 255, 255, 0.05);
@@ -25,7 +25,7 @@
 
 .light-mode {
   --text-color: black;
-  --bg-url: url(./assets/bg-desktop-light.jpg);
+  --bg-url: url(./assets/bg-mobile-light.jpg);
 
   --bt-color: rgba(0, 0, 0, 0.05);
   --bt-hover: rgba(0, 0, 0, 0.02);
@@ -40,6 +40,7 @@
 
 body {
   background: var(--bg-url) no-repeat top center/cover;
+  height: 100vh;
 }
 
 #container {
@@ -167,12 +168,12 @@ footer {
 
 /* media queries */
 
-@media (max-width: 700px) {
+@media (min-width: 700px) {
   :root {
-    --bg-url: url(./assets/bg-mobile.jpg);
+    --bg-url: url(./assets/bg-desktop.jpg);
   }
 
   .light-mode {
-    --bg-url: url(./assets/bg-mobile-light.jpg);
+    --bg-url: url(./assets/bg-desktop-light.jpg);
   }
 }
